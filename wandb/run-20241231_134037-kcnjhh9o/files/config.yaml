@@ -1,0 +1,80 @@
+wandb_version: 1
+
+task:
+  desc: null
+  value: WM
+model_depths:
+  desc: null
+  value:
+  - 3
+  - 3
+  - 9
+  - 3
+model_dims:
+  desc: null
+  value:
+  - 64
+  - 128
+  - 256
+  - 512
+drop_path_rate:
+  desc: null
+  value: 0.0
+batch_size:
+  desc: null
+  value: 32
+learning_rate:
+  desc: null
+  value: 0.0001
+num_epochs:
+  desc: null
+  value: 100
+num_workers:
+  desc: null
+  value: 8
+device:
+  desc: null
+  value: cuda:0
+seed:
+  desc: null
+  value: 1234
+checkpoint_dir:
+  desc: null
+  value: checkpoints
+project_name:
+  desc: null
+  value: hcp_classification
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.17
+    cli_version: 0.15.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1735620037.857787
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 49
+      - 53
+      - 55
+      - 63
+      2:
+      - 1
+      - 5
+      - 41
+      - 49
+      - 53
+      - 55
+      - 63
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.9.17
+      5: 0.15.10
+      8:
+      - 5

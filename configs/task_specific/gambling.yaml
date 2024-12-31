@@ -1,0 +1,26 @@
+# Working Memory task configuration
+
+task: GAMBLING
+model_depths: [3, 3, 9, 3]
+model_dims: [96, 192, 384, 768]
+drop_path_rate: 0.0
+batch_size: 32
+learning_rate: 1e-4
+num_epochs: 100
+num_workers: 8
+project_name: hcp_classification_gambling
+
+# Data augmentation settings (if needed)
+augmentation:
+  enable: false
+  # Add specific augmentation parameters here
+
+# Optimizer settings
+optimizer:
+  type: AdamW
+  weight_decay: 0.05
+  
+# Learning rate scheduler settings
+scheduler:
+  enable: false
+  # Add scheduler parameters here if needed
