@@ -1,19 +1,7 @@
 # Running Instructions
 
 ### Prerequisites
-
-Before running the code, you need to modify the data path in the configuration file:
-```python
-# In data/task_configs.py
-ROOT_DIR = "your_data_path"  # Change this to your data directory
-```
-
-```
-python main.py --task EMOTION --batch_size 32 --learning_rate 1e-4 --num_epochs 100 --device cuda:1 --model_dims 64 128 256 512 --drop_path_rate 0.1
-```
-
-
-### Data Directory Structure
+#### Data Directory Structure
 ```
 # ROOT_DIR = "your_data_path/" 
 └── EMOTION/
@@ -63,16 +51,26 @@ python main.py --task EMOTION --batch_size 32 --learning_rate 1e-4 --num_epochs 
         └── 2bk_tools/           # Label: 7
 
 ```
-### Data Description
+#### Data Description
 - Each `.npy` file contains a 3D brain image
 - Labels are determined by the directory name ('fear': 0, 'neut': 1)
 - Data is organized by subject IDs and emotion types
 
-### Data Loading Process
+#### Data Loading Process
  - **Dataset Class (`HCPDataset`):**
    - Loads 3D brain images from `.npy` files
    - Automatically assigns labels based on directory structure
    - Returns data as torch tensors with shape `[1, H, W, D]`
+
+Before running the code, you need to modify the data path in the configuration file:
+```python
+# In data/task_configs.py
+ROOT_DIR = "your_data_path"  # Change this to your data directory
+```
+
+```
+python main.py --task EMOTION --batch_size 32 --learning_rate 1e-4 --num_epochs 100 --device cuda:1 --model_dims 64 128 256 512 --drop_path_rate 0.1
+```
 
 
 ### Data arguments
