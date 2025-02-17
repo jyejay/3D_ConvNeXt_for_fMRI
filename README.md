@@ -64,6 +64,11 @@
 
 Before running the code, you need to modify the data path in the configuration file:
 ```python
+conda env create --file fmri_for_convnext.yaml
+conda acrivate fmri_for_convnext
+```
+
+```python
 # In data/task_configs.py
 ROOT_DIR = "your_data_path"  # Change this to your data directory
 ```
