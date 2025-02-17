@@ -63,10 +63,6 @@
    - Returns data as torch tensors with shape `[1, H, W, D]`
 
 Before running the code, you need to modify the data path in the configuration file:
-```python
-conda env create --file fmri_for_convnext.yaml
-conda acrivate fmri_for_convnext
-```
 
 ```python
 # In data/task_configs.py
