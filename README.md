@@ -60,7 +60,7 @@
  - **Dataset Class (`HCPDataset`):**
    - Loads 3D brain images from `.npy` files
    - Automatically assigns labels based on directory structure
-   - Returns data as torch tensors with shape `[1, H, W, D]`
+   - Returns data as torch tensors with shape `[1, D, H, W]`
 
 Before running the code, you need to modify the data path in the configuration file:
 
