@@ -1,11 +1,11 @@
 # Running Instructions
 
 ### Prerequisites
-Before running the code, you need to modify the data path in the configuration file:
+'Before running the code, you need to modify the data path in the configuration file:
 ```python
 # In data/task_configs.py
 ROOT_DIR = "your_data_path"  # Change this to your data directory
-
+```
 
 ```
 python main.py --task WM --batch_size 32 --learning_rate 1e-4 --num_epochs 100 --device cuda:1 --model_dims 64 128 256 512
