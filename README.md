@@ -15,7 +15,7 @@ python main.py --task EMOTION --batch_size 32 --learning_rate 1e-4 --num_epochs 
 
 ### Data Directory Structure
 ```
-# ROOT_DIR = /media/hcp_hdd/rs_HCP_ku/HCP_sample/ 
+# ROOT_DIR = "your_data_path/" 
 └── EMOTION/
 |    └── subject_id/              # e.g., 100206
 |        ├── fear/                # Label: 0
