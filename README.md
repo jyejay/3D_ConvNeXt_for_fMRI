@@ -53,8 +53,8 @@
 ```
 #### Data Description
 - Each `.npy` file contains a 3D brain image
-- Labels are determined by the directory name ('fear': 0, 'neut': 1)
-- Data is organized by subject IDs and emotion types
+- Labels are determined by the directory name (e.g. 'fear': 0, 'neut': 1)
+- Data is organized by subject IDs and task types
 
 #### Data Loading Process
  - **Dataset Class (`HCPDataset`):**
